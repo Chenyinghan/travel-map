@@ -1,0 +1,36 @@
+{
+  "name": "travel-map",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A personal travel map: light up the places you have been on a 3D globe and a flat world map, with trips and photo galleries. Publishes as a static site.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite build && node server/index.js",
+    "serve": "node server/index.js",
+    "build:site": "vite build --mode static",
+    "preview:site": "vite build --mode static && vite preview --mode static --port 4173",
+    "deploy": "node scripts/deploy.mjs",
+    "build-geo": "node scripts/build-geo.mjs"
+  },
+  "dependencies": {
+    "d3-geo": "^3.1.2",
+    "d3-selection": "^3.0.1",
+    "d3-transition": "^3.0.2",
+    "d3-zoom": "^3.0.1",
+    "globe.gl": "^2.46.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "mapshaper": "^0.7.101",
+    "vite": "^8.3.6"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}

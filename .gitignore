@@ -1,0 +1,10 @@
+node_modules/
+dist/
+site/
+.deploy/
+*.tmp
+.DS_Store
+
+# Your travel data, photos and personal settings (data/site.json) stay on your computer.
+# They are published only to your separate site repository by `npm run deploy`.
+/data/
